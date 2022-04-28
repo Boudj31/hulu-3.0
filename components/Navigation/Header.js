@@ -9,11 +9,11 @@ const Header = () => {
   return (
     <header className='flex flex-col sm:flex-row m-5 justify-between items-center h-auto'>
         <div className='flex flex-grow justify-evenly max-w-2xl'>
-            <HeaderItem title="HOME" Icon={HomeIcon} href="/login" />
-            <HeaderItem title="TRENDING" Icon={LightningBoltIcon} href="/trending"/>
+            <HeaderItem title="HOME" Icon={HomeIcon} href="/about"  />
+            <HeaderItem title="TRENDING" Icon={LightningBoltIcon} href="/about" />
             <HeaderItem title="VERIFIED" Icon={BadgeCheckIcon} href="/about" />
-            <HeaderItem title="COLLECTIONS" Icon={CollectionIcon} />
-            <HeaderItem title="SEARCH" Icon={SearchIcon} href="/search" />
+            <HeaderItem title="COLLECTIONS" Icon={CollectionIcon} href="/about" />
+            <HeaderItem title="SEARCH" Icon={SearchIcon} href="/about"  />
             <HeaderItem title="ACCOUNT" Icon={UserIcon} href={ isLogged ? "/profil" : "/login"} />
         </div>
     

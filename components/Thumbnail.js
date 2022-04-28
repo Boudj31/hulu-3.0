@@ -1,12 +1,12 @@
 import React from 'react'
 import ThumbUpIcon from './ThumbUpIcon';
-import { forwardRef } from 'react';
 
-const Thumbnail = forwardRef(({result}, ref) => {
+
+const Thumbnail = (({result}) => {
 
     const BASE_URL = "https://image.tmdb.org/t/p/original";
   return (
-    <div ref={ref} className='group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'>
+    <div className='group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'>
     
         <img src={`${BASE_URL}${result.backdrop_path || result.poster_path}`} alt="" width={1080} height={1920} />
         <div className='p-2'>

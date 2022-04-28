@@ -6,4 +6,4 @@ const Profil = () => {
   )
 }
 
-export default profil
+export default Profil
